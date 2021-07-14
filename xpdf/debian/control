@@ -1,0 +1,40 @@
+Source: xpdf
+Section: text
+Priority: optional
+Maintainer: Florian Schlichting <fsfs@debian.org>
+Standards-Version: 4.5.1
+Build-Depends:
+ debhelper-compat (= 11),
+ pkg-config,
+ libpaper-dev,
+ libxt-dev,
+ libx11-dev,
+ libmotif-dev,
+ libpoppler-private-dev (>= 0.76),
+Vcs-Browser: https://salsa.debian.org/debian/xpdf
+Vcs-Git: https://salsa.debian.org/debian/xpdf.git
+Homepage: http://offog.org/code/xpopple/
+Rules-Requires-Root: no
+
+Package: xpdf
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ poppler-utils,
+ poppler-data,
+ gsfonts-x11,
+ cups-bsd,
+ sensible-utils,
+Provides:
+ pdf-viewer,
+Description: Motif-based PDF reader using the Poppler library
+ xpdf is a light-weight open source viewer for Portable Document Format (PDF)
+ files (also called 'Adobe Acrobat' or 'Acrobat' files).  This is just the
+ xpdf viewer client; various command-line pdf tools are now provided via the
+ poppler-utils package.
+ .
+ Debian's xpdf is a fork of Xpdf version 3, modified to use the Poppler
+ PDF rendering library but keeping the Motif toolkit, and nowadays maintained
+ as the xpopple project.

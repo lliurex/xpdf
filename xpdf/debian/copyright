@@ -1,0 +1,54 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://offog.org/code/xpopple/
+Upstream-Name: xpopple
+Upstream-Contact: Adam Sampson <ats@offog.org>
+
+Files: *
+Copyright: 1996-2014 Derek B. Noonburg <derekn@foolabs.com>
+ 1996-2014 Glyph & Cog, LLC.
+ 2014-2021 Adam Sampson <ats@offog.org>
+License: GPL-2 or GPL-3
+ Xpdf is licensed under the GNU General Pulbic License (GPL), version 2
+ or 3.  This means that you can distribute derivatives of Xpdf under
+ any of the following:
+   - GPL v2 only
+   - GPL v3 only
+   - GPL v2 or v3
+ .
+ The Xpdf source package includes the text of both GPL versions:
+ COPYING for GPL v2, COPYING3 for GPL v3.
+ .
+ Please note that Xpdf is NOT licensed under "any later version" of the
+ GPL, as I have no idea what those versions will look like.
+ .
+ If you are redistributing unmodified copies of Xpdf (or any of the
+ Xpdf tools) in binary form, you need to include all of the
+ documentation: README, man pages (or help files), COPYING, and
+ COPYING3.
+ .
+ If you want to incorporate the Xpdf source code into another program
+ (or create a modified version of Xpdf), and you are distributing that
+ program, you have two options: release your program under the GPL (v2
+ and/or v3), or purchase a commercial Xpdf source license.
+ .
+ If you're interested in commercial licensing, please see the Glyph &
+ Cog web site:
+ .
+     http://www.glyphandcog.com/
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2',
+ while the full text of the GNU General Public License version 3 can be
+ found in the file `/usr/share/common-licenses/GPL-3'.
+
+Files: debian/*
+Copyright: 1996-1998 Dirk Eddelbuettel <edd@debian.org>
+           1998-2007 Hamish Moffatt <hamish@debian.org>
+           2010 Osamu Aoki <osamu@debian.org>
+           2010 Rogério Theodoro de Brito <rbrito@ime.usp.br>
+           2010-2016 Michael Gilbert <mgilbert@debian.org>
+           2017-2019 Gianfranco Costamagna <locutusofborg@debian.org>
+           2017-2021 Florian Schlichting <fsfs@debian.org>
+License: GPL-2
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.

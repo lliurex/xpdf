@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+# /etc/xpdf/includes was created by postinst and NOT a conffile
+# can be removed by bullseye+1
+rm -f /etc/xpdf/includes
+
+#DEBHELPER#

@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
+export DEB_CPPFLAGS_MAINT_APPEND = -DHAVE_PAPER_H
+export LIBS+=-lpaper
+
+%:
+	dh $@
+
+execute_after_dh_auto_install:
+	mv debian/xpdf/usr/bin/xpdf debian/xpdf/usr/bin/xpdf.real
