@@ -1,0 +1,23 @@
+commit 1b27cc5bb4491aed9d65c9f98704a693e3aabe59
+Author: Adam Sampson <ats@offog.org>
+Date:   Wed Mar 3 14:14:52 2021 +0000
+
+    Initialise XPDFParams::psLevel.
+    
+    This meant that PostScript output didn't work unless you specified
+    psLevel explicitly in the config file.
+    
+    Reported by Frédéric Brière in Debian bug #983880.
+
+diff --git a/xpdf/XPDFParams.cc b/xpdf/XPDFParams.cc
+index 4929bed..f33dd1e 100644
+--- a/xpdf/XPDFParams.cc
++++ b/xpdf/XPDFParams.cc
+@@ -159,6 +159,7 @@ XPDFParams::XPDFParams(const char *cfgFileName) {
+   psImageableURY = psPaperHeight;
+   psCrop = true;
+   psDuplex = false;
++  psLevel = psLevel2;
+   initialZoom = "125";
+   continuousView = false;
+   createDefaultKeyBindings();
